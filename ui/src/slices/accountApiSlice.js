@@ -1,13 +1,8 @@
-/**
- * Copyright (c) 2023 Cisco Systems, Inc. and its affiliates All rights reserved.
- * Use of this source code is governed by a BSD-style
- * license that can be found in the LICENSE file.
- */
-
 import { apiSlice } from "./usersApiSlice";
 import ApiUrls from "./apiUrls";
 
-const accsUrl = import.meta.env.VITE_ACCOUNTS_URL || ApiUrls.VITE_ACCOUNTS_URL;
+const accsUrl =
+  import.meta.env.VITE_ACCOUNTS_URL || ApiUrls.VITE_ACCOUNTS_URL;
 
 export const accountApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
@@ -22,6 +17,7 @@ export const accountApiSlice = apiSlice.injectEndpoints({
         body: data,
       }),
     }),
+
     getAllAccounts: builder.mutation({
       query: (data) => ({
         url: `${accsUrl}allaccounts`,
@@ -36,4 +32,7 @@ export const accountApiSlice = apiSlice.injectEndpoints({
   }),
 });
 
-export const { useCreateAccountMutation, useGetAllAccountsMutation } = accountApiSlice;
+export const {
+  useCreateAccountMutation,
+  useGetAllAccountsMutation,
+} = accountApiSlice;

@@ -22,7 +22,7 @@ const connectDB = async () => {
         `Connecting to local MongoDB at ${process.env.DATABASE_HOST} ...`
       );
       const conn = await mongoose.connect(
-        `mongodb://${process.env.DATABASE_HOST}:27017/`
+        `mongodb://root:example@${process.env.DATABASE_HOST}:27017/`
       );
     } else {
       console.log(
