@@ -20,5 +20,4 @@ jobs:
 
           script: |
             cd ~/martian-bank-demo
-            git pull origin main
-            docker compose up -d --build
+            ./deploy.sh
