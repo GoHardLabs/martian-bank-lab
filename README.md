@@ -1,17 +1,16 @@
 # Martian Bank Lab
 
-![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
-![Nginx](https://img.shields.io/badge/Nginx-Reverse%20Proxy-green)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)
-![React](https://img.shields.io/badge/Frontend-React%20%2F%20Vite-61dafb)
-![Flask](https://img.shields.io/badge/Backend-Flask-black)
-![Status](https://img.shields.io/badge/Status-Development-orange)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/-Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
 Инфраструктурный banking lab-проект с микросервисной архитектурой и production-like deployment.
 
 ---
 
-## Основано на
+## 📌 Основано на
 
 Оригинальный проект Cisco:
 
@@ -29,7 +28,44 @@ https://github.com/cisco-open/martian-bank-demo
 
 ---
 
-## Архитектура
+## 🛠️ Tech Stack
+
+### ⚙️ DevOps & Infrastructure
+
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/-Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+---
+
+### 💻 Backend
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/-Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![gRPC](https://img.shields.io/badge/-gRPC-244c5a?style=for-the-badge&logo=googlecloud&logoColor=white)
+
+---
+
+### 🎨 Frontend
+
+![React](https://img.shields.io/badge/-React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
+---
+
+### 📊 Monitoring & Testing
+
+![Locust](https://img.shields.io/badge/-Locust-00C7B7?style=for-the-badge&logo=speedtest&logoColor=white)
+![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+
+---
+
+## 🧩 Архитектура
 
 - React / Vite frontend
 - Flask & Node.js backend services
@@ -40,7 +76,7 @@ https://github.com/cisco-open/martian-bank-demo
 
 ---
 
-## Сервисы
+## 📦 Сервисы
 
 | Сервис | Назначение |
 |---|---|
@@ -55,37 +91,7 @@ https://github.com/cisco-open/martian-bank-demo
 
 ---
 
-## Инфраструктура
-
-Проект развёрнут на Linux VPS с использованием Docker Compose.
-
-Nginx маршрутизирует frontend/backend трафик между сервисами.
-
-MongoDB используется как основная база данных.
-
----
-
-## Monitoring / DevOps
-
-Планируемые улучшения:
-
-- GitHub Actions CI/CD
-- Automated deployment
-- Prometheus monitoring
-- Grafana dashboards
-- Uptime Kuma
-- HTTPS / SSL
-- Centralized logging
-
----
-
-## Нагрузочное тестирование
-
-В проект интегрирован Locust для проведения нагрузочных тестов.
-
----
-
-## Запуск
+## 🚀 Запуск
 
 ```bash
 docker compose up -d --build
